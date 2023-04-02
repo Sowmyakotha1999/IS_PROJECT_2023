@@ -1,2 +1,2 @@
 # IS-Project
-Developing an Intelligent Agent
+Developing an Intelligent Agent about Oceans and their continents...!
