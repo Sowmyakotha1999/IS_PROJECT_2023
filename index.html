@@ -46,26 +46,60 @@
       var isClose=true;
         const stopwords = ["of", "the", "a", "an", "any", "is", "can", "who", "what", "why", "whom"];
         var editor = "sorts\n" +
-            "    #people = {tommy, alex, john, daniel, sarah, peter, lino}.\n" +
-            "    #gender = {male, female}.\n" +
-            "predicates\n" +
-            "    advisor(#people, #people).\n" +
-            "    friend(#people, #people).\n" +
-            "    gender(#people,#gender).\n" +
-            "    spanish(#people).\n" +
-            "rules\n" +
-            "    advisor(tommy, alex).\n" +
-            "    advisor(tommy, john).\n" +
-            "    advisor(tommy, daniel).\n" +
-            "    advisor(tommy, lino).\n" +
-            "    friend(lino, alex).\n" +
-            "    friend(lino, peter).\n" +
-            "    friend(sarah, alex).\n" +
-            "    friend(X, Y):-friend(Y,X).\n" +
-            "    gender(tommy,male).\n" +
-            "    gender(lino,male).\n" +
-            "    gender(sarah, female).\n" +
-            "    spanish(lino).";
+//             "    #people = {tommy, alex, john, daniel, sarah, peter, lino}.\n" +
+//             "    #gender = {male, female}.\n" +
+//             "predicates\n" +
+//             "    advisor(#people, #people).\n" +
+//             "    friend(#people, #people).\n" +
+//             "    gender(#people,#gender).\n" +
+//             "    spanish(#people).\n" +
+//             "rules\n" +
+//             "    advisor(tommy, alex).\n" +
+//             "    advisor(tommy, john).\n" +
+//             "    advisor(tommy, daniel).\n" +
+//             "    advisor(tommy, lino).\n" +
+//             "    friend(lino, alex).\n" +
+//             "    friend(lino, peter).\n" +
+//             "    friend(sarah, alex).\n" +
+//             "    friend(X, Y):-friend(Y,X).\n" +
+//             "    gender(tommy,male).\n" +
+//             "    gender(lino,male).\n" +
+//             "    gender(sarah, female).\n" +
+//             "    spanish(lino).";
+            
+            
+
+" #oceans ={ pacific_ocean, atlantic_ocean,indian_ocean, southern_ocean,arctic_ocean}.\n" +
+
+" #continents =  {africa , europe , asia, australia,antarctica}.\n" +
+
+" predicates\n" +
+
+" ocean(#oceans).\n" +
+" continent(#continents).\n" +
+" largest_ocean(#oceans).\n" +
+" nearest_continent(#oceans, #continents).\n" +
+" deepest_ocean(#oceans).\n" +
+
+" rules.\n" + 
+
+" ocean(pacific_ocean).\n" +
+" ocean(atlantic_ocean).\n" +
+" ocean(indian_ocean).\n" +
+"ocean(southern_ocean).\n" +
+" ocean(arctic_ocean).\n" +
+"continent(antarctica).\n" +
+"continent(africa).\n" +
+"continent(europe).\n" +
+"continent(asia).\n" +
+"continent(australia).\n" +
+"largest_ocean(pacific_ocean).\n" +
+"nearest_continent(pacific_ocean, asia).\n" +
+"nearest_continent(atlantic_ocean, africa).\n" +
+"nearest_continent(indian_ocean, australia).\n" +
+"nearest_continent(southern_ocean, antarctica).\n" +
+"nearest_continent(arctic_ocean, europe).\n" +
+"deepest_ocean(pacific_ocean).\n";
         // sorts
         var contstring = editor.split("sorts\n")[1].split("predicates\n");
         var sortstring = contstring[0].split('.');
