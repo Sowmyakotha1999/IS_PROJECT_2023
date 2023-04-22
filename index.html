@@ -61,7 +61,7 @@
 " ocean(#oceans).\n" +
 " continent(#continents).\n" +
 " largest_ocean(#oceans).\n" +
-" nearest_continent(#oceans, #continents).\n" +
+" nearest_continent(#continents,#oceans).\n" +
 " deepest_ocean(#oceans).\n" +
 
 " rules\n" + 
@@ -77,11 +77,11 @@
 "continent(asia).\n" +
 "continent(australia).\n" +
 "largest_ocean(pacific_ocean).\n" +
-"nearest_continent(pacific_ocean, asia).\n" +
-"nearest_continent(atlantic_ocean, africa).\n" +
-"nearest_continent(indian_ocean, australia).\n" +
-"nearest_continent(southern_ocean, antarctica).\n" +
-"nearest_continent(arctic_ocean, europe).\n" +
+"nearest_continent(asia,pacific_ocean).\n" +
+"nearest_continent(africa,atlantic_ocean).\n" +
+"nearest_continent(asia,indian_ocean).\n" +
+"nearest_continent(antarctica,southern_ocean).\n" +
+"nearest_continent(europe,arctic_ocean,).\n" +
 "deepest_ocean(pacific_ocean).\n";
         // sorts
         var contstring = editor.split("sorts\n")[1].split("predicates\n");
