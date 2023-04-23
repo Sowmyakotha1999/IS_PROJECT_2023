@@ -16,11 +16,11 @@
         background-color: #4CAF50;
         border: none;
         color: white;
-        padding: 10px;
+        padding: 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 20px;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 50%;
@@ -35,15 +35,54 @@
         background-image: url("https://worldinmaps.com/wp-content/uploads/2020/07/oceans-map-1.jpeg");
 
         }
+
+      /* Increase the size of the text box */
+      #text-input {
+        width: 80%;
+        height: 75px;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+     
+
+    #submit-btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+        font-size: 16px;
+        margin-top: 10px;
+        border-radius: 50%;
+      }
+
+/* Center the submit button */
+      #submit-container {
+        text-align: center;
+      }
+
+h1 {
+        background-color: #4CAF50;
+        text-align: center;
+      }
+
     </style>
   </head>
   <body>
     <h1>Hey boss, Do you have any question on the oceans? just ask me below!</h1>
     <div id="answer"></div>
     <button id="voice-input-btn"><i class="fa fa-microphone"></i></button>
-    <input type="text" id="text-input" placeholder="Waiting for the question....">
+    <!-- Updated text box here -->
+    <textarea id="text-input" placeholder="Waiting for the question...."></textarea>
     <button id="submit-btn">Submit</button>
     <div id="answer-box"></div>
+
+    
 
     <script>
       
