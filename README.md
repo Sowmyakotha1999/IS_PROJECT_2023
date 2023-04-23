@@ -9,7 +9,6 @@ We have designed a web application here software able to handle inputs either fr
 The tools we used to build this web application is HTML , CSS and JavaScript. 
 
 We have developed a software which is able to answer questions in English: either through spoken or written questions,
-
 A key intelligent behavior of our software is from non-trivial automated reasoning through ASP/SPARC and non-trivial ASP/SPARC rules were involved.
 
 Techniques / method behind the Agent -
