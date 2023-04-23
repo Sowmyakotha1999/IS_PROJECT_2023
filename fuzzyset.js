@@ -5,7 +5,7 @@ var FuzzySet = function(arr, useLevenshtein, gramSizeLower, gramSizeUpper) {
         
     };
 
-    // default options
+    //  These are the default options
     arr = arr || [];
     fuzzyset.gramSizeLower = gramSizeLower || 2;
     fuzzyset.gramSizeUpper = gramSizeUpper || 3;
@@ -233,7 +233,7 @@ var FuzzySet = function(arr, useLevenshtein, gramSizeLower, gramSizeUpper) {
         return str.toLowerCase();
     };
 
-    // return length of items in set
+    // return  the length of items in set
     fuzzyset.length = function() {
         var count = 0,
             prop;
@@ -255,7 +255,7 @@ var FuzzySet = function(arr, useLevenshtein, gramSizeLower, gramSizeUpper) {
         return true;
     };
 
-    // return list of values loaded into set
+    // return list of values loaded into the set
     fuzzyset.values = function() {
         var values = [],
             prop;
