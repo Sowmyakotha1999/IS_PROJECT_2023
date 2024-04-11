@@ -12,6 +12,7 @@ We have developed a software which is able to answer questions in English: eithe
 A key intelligent behavior of our software is from non-trivial automated reasoning through ASP/SPARC and non-trivial ASP/SPARC rules were involved.
 
 Techniques / method behind the Agent -
+We have used below methods for creating this Agent
 • Develop a Web Application
 • Speech Recognization / Speech to Text conversion
 • ASP Solver 
